@@ -26,6 +26,21 @@ hamburger.addEventListener('click', () => {
   }
 });
 
+// keep a CSS variable updated with the header height so hero padding can adapt
+function updateNavHeight() {
+  const h = navbar.offsetHeight;
+  document.documentElement.style.setProperty('--navbar-height', h + 'px');
+}
+// run initially and whenever the layout might change
+updateNavHeight();
+window.addEventListener('resize', updateNavHeight);
+window.addEventListener('scroll', () => {
+  const scrolled = window.scrollY > 60;
+  navbar.classList.toggle('scrolled', scrolled);
+  floatCta.classList.toggle('visible', scrolled);
+  updateNavHeight();
+}, { passive: true });
+
 navLinks.querySelectorAll('a').forEach(link => {
   link.addEventListener('click', () => {
     navLinks.classList.remove('open');

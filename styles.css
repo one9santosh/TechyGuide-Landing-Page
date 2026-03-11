@@ -1,8 +1,4 @@
-/* ============================================================
-   TECHYGUIDE – LIGHT THEME STYLESHEET
-   Palette: Warm Ivory · Deep Ink · Indigo Blue · Coral
-   Fonts: Bricolage Grotesque (Display) + Instrument Sans (Body)
-============================================================ */
+
 
 /* ── RESET ── */
 *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
@@ -32,6 +28,8 @@
   --font-b:     'Instrument Sans', sans-serif;
   --ease:       cubic-bezier(.4,0,.2,1);
   --t:          0.3s;
+  /* dynamic height used to offset fixed header */
+  --navbar-height: 80px;
 }
 
 html { scroll-behavior: smooth; }
@@ -41,6 +39,11 @@ body {
   color: var(--ink);
   overflow-x: hidden;
   line-height: 1.65;
+  /* keep content below the fixed navbar */
+  padding-top: var(--navbar-height);
+}
+section {
+  scroll-margin-top: var(--navbar-height);
 }
 
 /* ── UTILITIES ── */
@@ -184,7 +187,7 @@ body {
 .nav-right { display: flex; align-items: center; gap: 16px; flex-shrink: 0; }
 .nav-phone { font-size: 0.82rem; color: var(--ink-3); text-decoration: none; transition: color var(--t); }
 .nav-phone:hover { color: var(--ink); }
-.hamburger { display: none; flex-direction: column; gap: 5px; background: none; border: none; cursor: pointer; padding: 4px; margin-left: auto; }
+.hamburger { display: none; flex-direction: column; gap: 5px; background: none; border: none; cursor: pointer; padding: 4px; margin-left: auto; position: relative; z-index: 1002; /* default stacking for desktop */ }
 .hamburger span { display: block; width: 22px; height: 2px; background: var(--ink); border-radius: 2px; transition: var(--t); }
 
 /* ══════════════════════════════════════════
@@ -195,7 +198,8 @@ body {
   display: flex;
   flex-direction: column;
   justify-content: center;
-  padding-top: 80px;
+  /* leave room for navbar; value updated via JS when header resizes */
+  padding-top: var(--navbar-height, 80px);
   position: relative;
   overflow: hidden;
   background: var(--bg);
@@ -760,6 +764,7 @@ body {
 @media (max-width: 1024px) {
   .hero-layout { grid-template-columns: 1fr; gap: 48px; }
   .hero-right { display: none; }
+  .hero { min-height: auto !important; padding-top: calc(var(--navbar-height,80px) + 20px); padding-bottom: 80px; overflow: visible; }
   .split-header { grid-template-columns: 1fr; gap: 20px; }
   .bento-grid { grid-template-columns: 1fr 1fr; }
   .bcard-tall { grid-row: span 1; }
@@ -773,11 +778,20 @@ body {
   .stats-row { flex-wrap: wrap; gap: 32px; }
   .sb-div { display: none; }
 }
-@media (max-width: 768px) {
+@media (max-width: 1024px) {
+  .hamburger { display: flex; z-index: 1002; }
+  .nav-links, .nav-right { display: none; }
   .section { padding: 70px 0; }
   .container { padding: 0 16px; }
   .nav-links, .nav-right { display: none; }
-  .hamburger { display: flex; }
+  /* keep burger visible above overlay by fixing it outside header stacking context */
+  .hamburger {
+    display: flex;
+    position: fixed;
+    top: calc(env(safe-area-inset-top, 0px) + 16px);
+    right: calc(env(safe-area-inset-right, 0px) + 16px);
+    z-index: 1002;
+  }
   .navbar { padding: 14px 0; }
   .nav-inner { gap: 16px; padding: 0 16px; }
   .nav-links.open {
@@ -789,11 +803,14 @@ body {
     align-items: center;
     justify-content: center;
     gap: 36px;
-    z-index: 999;
+    z-index: 1001; /* sit above navbar (1000) */
     padding-top: 80px;
+    overflow-y: auto; /* allow scrolling if links exceed viewport */
+    -webkit-overflow-scrolling: touch;
   }
   .nav-links.open a { font-size: 1.5rem; font-weight: 700; }
   .hero-layout { padding: 40px 16px 60px; }
+  .hero { padding-top: var(--navbar-height,80px); }
   .hero-title { font-size: clamp(3rem, 11vw, 4rem); }
   .hero-actions { flex-direction: column; align-items: stretch; }
   .hero-actions .btn { width: 100%; }
@@ -820,7 +837,7 @@ body {
 @media (max-width: 640px) {
   .section { padding: 60px 0; }
   .section-title { font-size: clamp(1.5rem, 5vw, 2.2rem); }
-  .hero { padding-top: 60px; }
+  .hero { padding-top: var(--navbar-height,60px); min-height: auto !important; padding-bottom: 60px; overflow: visible; }
   .hero-eyebrow { font-size: 0.7rem; }
   .hero-title { font-size: clamp(2.2rem, 9vw, 3rem); }
   .hero-desc { font-size: 0.9rem; }
@@ -872,7 +889,7 @@ body {
   .section { padding: 50px 0; }
   .navbar { padding: 12px 0; }
   .nav-inner { padding: 0 12px; gap: 12px; }
-  .hero { padding-top: 50px; min-height: auto; }
+  .hero { padding-top: var(--navbar-height,50px); min-height: auto !important; padding-bottom: 50px; overflow: visible; }
   .hero-scroll-hint { display: none; }
   .marquee-bar { padding: 8px 0; }
   .marquee-inner { gap: 24px; font-size: 0.75rem; }
