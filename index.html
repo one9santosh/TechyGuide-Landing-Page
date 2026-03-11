@@ -1,0 +1,664 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>TechyGuide – India's #1 STEM Platform for Schools & Students</title>
+  <meta name="description" content="Transform your school with AI & Robotics Labs, DIY STEM Kits, and live coding courses. Serving 50+ ATL labs across India. Book a free demo today!"/>
+  <link rel="preconnect" href="https://fonts.googleapis.com"/>
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin/>
+  <link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,300;12..96,400;12..96,600;12..96,700;12..96,800&family=Instrument+Sans:ital,wght@0,400;0,500;0,600;1,400&display=swap" rel="stylesheet"/>
+  <link rel="stylesheet" href="styles.css"/>
+</head>
+<body>
+
+  <!-- ░░ CURSOR DOT ░░ -->
+  <div class="cursor-dot" id="cursorDot"></div>
+
+  <!-- ░░ NAVBAR ░░ -->
+  <header class="navbar" id="navbar">
+    <div class="nav-inner">
+      <a href="#" class="nav-logo">
+        <img src="assets/Logo_TG_Tagline 2.png" alt="TechyGuide Logo" class="logo-img"/>
+      </a>
+      <nav class="nav-links" id="navLinks">
+        <a href="#about">About</a>
+        <a href="#products">Kits</a>
+        <a href="#schools">Schools</a>
+        <a href="#courses">Courses</a>
+        <a href="#testimonials">Reviews</a>
+      </nav>
+      <div class="nav-right">
+        <a href="tel:+919114036376" class="nav-phone">📞 +91 91140 36376</a>
+        <a href="#lead-form" class="btn btn-nav">Book Free Demo</a>
+      </div>
+      <button class="hamburger" id="hamburger" aria-label="Menu">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </header>
+
+  <!-- ░░ HERO ░░ -->
+  <section class="hero" id="home">
+    <div class="hero-bg-shapes">
+      <div class="shape shape-circle"></div>
+      <div class="shape shape-ring"></div>
+      <div class="shape shape-blob"></div>
+      <div class="dot-grid"></div>
+    </div>
+    <div class="hero-layout container">
+      <div class="hero-left">
+        <div class="hero-eyebrow reveal">
+          <span class="eyebrow-dot"></span>
+          India's Most Trusted STEM Platform
+        </div>
+        <h1 class="hero-title reveal delay-1">
+          Ignite<br/>
+          <em>Innovation</em><br/>
+          In Every<br/>
+          Student.
+        </h1>
+        <p class="hero-desc reveal delay-2">
+          AI Labs · Robotics Kits · Live Courses · ATL Setup<br/>
+          Empowering <strong>50,000+ students</strong> across India.
+        </p>
+        <div class="hero-actions reveal delay-3">
+          <a href="#lead-form" class="btn btn-primary btn-lg pulse">🚀 Book Free Workshop</a>
+          <a href="#about" class="btn btn-ghost btn-lg">How It Works ↓</a>
+        </div>
+      </div>
+      <div class="hero-right reveal delay-2">
+        <div class="hero-card-stack">
+          <div class="hcard hcard-main">
+            <div class="hcard-icon">🤖</div>
+            <div class="hcard-info">
+              <span class="hcard-label">AI & Robotics Lab</span>
+              <span class="hcard-sub">Setup in 2–4 weeks</span>
+            </div>
+            <div class="hcard-badge">✓ Active</div>
+          </div>
+          <div class="hcard hcard-float hcard-stat">
+            <div class="hstat-num">50+</div>
+            <div class="hstat-label">ATL Labs Installed</div>
+          </div>
+          <div class="hcard hcard-float hcard-stat-2">
+            <div class="hstat-num">500+</div>
+            <div class="hstat-label">Schools Partnered</div>
+          </div>
+          <div class="hcard hcard-gem">
+            <span class="gem-star">★★★★★</span>
+            <span class="gem-label">GeM Certified · 5-Star Vendor</span>
+          </div>
+          <div class="hcard hcard-students">
+            <div class="student-avs">
+              <div class="sav" style="background:#2B1FE8">S</div>
+              <div class="sav" style="background:#FF4B26">R</div>
+              <div class="sav" style="background:#0A9553">A</div>
+              <div class="sav" style="background:#D97706">M</div>
+            </div>
+            <span>50,000+ students trained</span>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="hero-scroll-hint">
+      <div class="scroll-line"></div>
+      <span>scroll</span>
+    </div>
+  </section>
+
+  <!-- ░░ MARQUEE ░░ -->
+  <div class="marquee-bar">
+    <div class="marquee-inner">
+      <span>Robotics Labs</span><em class="sep">✦</em>
+      <span>AI & Machine Learning</span><em class="sep">✦</em>
+      <span>IoT Projects</span><em class="sep">✦</em>
+      <span>3D Printing</span><em class="sep">✦</em>
+      <span>ATL Lab Setup</span><em class="sep">✦</em>
+      <span>STEM Workshops</span><em class="sep">✦</em>
+      <span>Online Coding Courses</span><em class="sep">✦</em>
+      <span>GeM Certified Vendor</span><em class="sep">✦</em>
+      <span>Robotics Labs</span><em class="sep">✦</em>
+      <span>AI & Machine Learning</span><em class="sep">✦</em>
+      <span>IoT Projects</span><em class="sep">✦</em>
+      <span>3D Printing</span><em class="sep">✦</em>
+      <span>ATL Lab Setup</span><em class="sep">✦</em>
+      <span>STEM Workshops</span><em class="sep">✦</em>
+      <span>Online Coding Courses</span><em class="sep">✦</em>
+      <span>GeM Certified Vendor</span><em class="sep">✦</em>
+    </div>
+  </div>
+
+  <!-- ░░ PILLARS ░░ -->
+  <section class="section pillars-section" id="about">
+    <div class="container">
+      <div class="split-header">
+        <div class="sh-left">
+          <div class="section-label reveal">What We Stand For</div>
+          <h2 class="section-title reveal delay-1">A Platform Built to<br/><span class="accent-text">Shape Tomorrow's</span><br/>Tech Leaders</h2>
+        </div>
+        <div class="sh-right reveal delay-2">
+          <p>TechyGuide offers a creative platform where young minds transform ideas into real innovations — nurturing curiosity and a passion for discovery in every child.</p>
+        </div>
+      </div>
+      <div class="pillars-row">
+        <div class="pillar reveal delay-1">
+          <div class="pillar-num">01</div>
+          <div class="pillar-emoji">💭</div>
+          <h3>Imagine</h3>
+          <p>We spark curiosity through engaging real-world STEM scenarios that challenge how students see and approach problems.</p>
+        </div>
+        <div class="pillar reveal delay-2">
+          <div class="pillar-num">02</div>
+          <div class="pillar-emoji">💡</div>
+          <h3>Ideate</h3>
+          <p>Students brainstorm and prototype solutions using Scratch, PictoBlox, and AI tools — building design thinking skills along the way.</p>
+        </div>
+        <div class="pillar reveal delay-3">
+          <div class="pillar-num">03</div>
+          <div class="pillar-emoji">🚀</div>
+          <h3>Innovate</h3>
+          <p>Young learners build real robots, IoT devices, and AI projects that solve actual problems in their schools and communities.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ░░ PRODUCTS ░░ -->
+  <section class="section products-section" id="products">
+    <div class="container">
+      <div class="section-label reveal">Our Hardware</div>
+      <div class="prod-header">
+        <h2 class="section-title reveal delay-1">Hands-On Kits That<br/><span class="accent-text">Actually Teach</span></h2>
+        <a href="https://www.techyguide.in/products-courses" target="_blank" class="btn btn-outline reveal delay-2">Browse All →</a>
+      </div>
+      <div class="bento-grid">
+        <div class="bcard bcard-tall reveal delay-1">
+          <div class="bc-tag">Best Seller</div>
+          <div class="bc-emoji">🦾</div>
+          <h3>Robotics Arm Kit</h3>
+          <p>Build and program a fully functional robotic arm. Servo motors, controller board, and full curriculum guide included.</p>
+          <ul class="bc-list">
+            <li>Arduino-compatible board</li>
+            <li>4-axis servo motion</li>
+            <li>10 guided projects</li>
+            <li>Video tutorials included</li>
+          </ul>
+          <a href="https://www.techyguide.in/products-courses" target="_blank" class="bc-link">Explore Kit →</a>
+        </div>
+        <div class="bcard reveal delay-2">
+          <div class="bc-tag new">New</div>
+          <div class="bc-emoji">🌐</div>
+          <h3>IoT Advance Kit</h3>
+          <p>Connect sensors to the cloud and build smart home devices, weather stations, and real-time dashboards.</p>
+          <ul class="bc-list">
+            <li>ESP32 Wi-Fi board</li>
+            <li>15+ sensors included</li>
+          </ul>
+          <a href="https://www.techyguide.in/products-courses" target="_blank" class="bc-link">Explore →</a>
+        </div>
+        <div class="bcard bcard-accent reveal delay-3">
+          <div class="bc-emoji">🏆</div>
+          <h3>Robotics Champ Pro</h3>
+          <p>Competition-ready autonomous robot kit for serious learners and school robotics teams.</p>
+          <ul class="bc-list">
+            <li>Autonomous AI modes</li>
+            <li>Competition prep guide</li>
+          </ul>
+          <a href="https://www.techyguide.in/products-courses" target="_blank" class="bc-link">Explore →</a>
+        </div>
+        <div class="bcard reveal delay-4">
+          <div class="bc-emoji">🖨️</div>
+          <h3>Ottoman 3D Print Kit</h3>
+          <p>Learn CAD design and additive manufacturing with Tinkercad. PLA filament and 8 projects included.</p>
+          <ul class="bc-list">
+            <li>Tinkercad design course</li>
+            <li>School-ready curriculum</li>
+          </ul>
+          <a href="https://www.techyguide.in/products-courses" target="_blank" class="bc-link">Explore →</a>
+        </div>
+        <div class="bcard bcard-cta reveal delay-2">
+          <div class="bcard-cta-inner">
+            <div class="bcc-num">4+</div>
+            <p>Product Categories</p>
+            <small>Robotics · IoT · 3D Print · Combos</small>
+            <a href="https://www.techyguide.in/products-courses" target="_blank" class="btn btn-primary">Shop All Kits</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ░░ FOR SCHOOLS ░░ -->
+  <section class="section schools-section" id="schools">
+    <div class="container">
+      <div class="section-label reveal">For Educational Institutions</div>
+      <h2 class="section-title reveal delay-1">Complete STEM Infrastructure<br/><span class="accent-text">For Your School</span></h2>
+      <div class="schools-grid">
+        <div class="school-feature reveal delay-1">
+          <div class="sf-tag">Most Popular</div>
+          <div class="sf-emoji">🧪</div>
+          <h3>STEM Innovation Lab</h3>
+          <p>We establish a complete STEM Innovation Lab — equipment, curriculum, teacher training, and ongoing support. One vendor, zero hassle.</p>
+          <div class="sf-checks">
+            <span>Full lab design & installation</span>
+            <span>NEP 2020-aligned curriculum</span>
+            <span>Teacher training & certification</span>
+            <span>Regular content updates</span>
+            <span>Dedicated support team</span>
+          </div>
+          <a href="#lead-form" class="btn btn-primary">Get a Custom Proposal →</a>
+        </div>
+        <div class="schools-side">
+          <div class="smini reveal delay-2">
+            <div class="smini-icon">🏛️</div>
+            <div>
+              <h4>ATL Lab Setup</h4>
+              <p>GeM registered, 5-star rated. Serviced 50+ Atal Tinkering Labs across India — fully AIM-NITI Aayog compliant.</p>
+              <a href="#lead-form" class="tlink">Learn more →</a>
+            </div>
+          </div>
+          <div class="smini reveal delay-3">
+            <div class="smini-icon">🤖</div>
+            <div>
+              <h4>AI & Robotics Lab</h4>
+              <p>Dedicated AI lab with computer vision, ML tools, and industry-standard hardware for future-ready schools.</p>
+              <a href="#lead-form" class="tlink">Learn more →</a>
+            </div>
+          </div>
+          <div class="smini reveal delay-4">
+            <div class="smini-icon">🎉</div>
+            <div>
+              <h4>Workshops & Tinkerfest</h4>
+              <p>High-impact workshops and competitions — 1-day to week-long formats, fully customized to your institution.</p>
+              <a href="#lead-form" class="tlink">Book free workshop →</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ░░ STATS BAND ░░ -->
+  <div class="stats-band">
+    <div class="container">
+      <div class="stats-row">
+        <div class="sband reveal delay-1">
+          <div class="sb-num" data-target="50">0</div><span class="sb-suf">+</span>
+          <div class="sb-label">ATL Labs Installed</div>
+        </div>
+        <div class="sb-div"></div>
+        <div class="sband reveal delay-2">
+          <div class="sb-num" data-target="500">0</div><span class="sb-suf">+</span>
+          <div class="sb-label">Schools Partnered</div>
+        </div>
+        <div class="sb-div"></div>
+        <div class="sband reveal delay-3">
+          <div class="sb-num" data-target="50000">0</div><span class="sb-suf">+</span>
+          <div class="sb-label">Students Trained</div>
+        </div>
+        <div class="sb-div"></div>
+        <div class="sband reveal delay-4">
+          <div class="sb-num">5</div><span class="sb-suf">★</span>
+          <div class="sb-label">GeM Vendor Rating</div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- ░░ COURSES ░░ -->
+  <section class="section courses-section" id="courses">
+    <div class="container">
+      <div class="section-label reveal">Online & Virtual Learning</div>
+      <div class="courses-hdr">
+        <h2 class="section-title reveal delay-1">Courses That Turn<br/><span class="accent-text">Kids Into Creators</span></h2>
+        <p class="reveal delay-2">Self-paced & live courses in AI, Robotics, IoT, 3D Printing and Programming. First class FREE.</p>
+      </div>
+      <div class="course-list">
+        <div class="cr reveal delay-1">
+          <div class="cr-num">01</div>
+          <div class="cr-icon">🤖</div>
+          <div class="cr-body"><h4>Robotics Course</h4><p>Build real robots — mechanical design, electronics, and programming in one integrated curriculum.</p></div>
+          <div class="cr-right"><span class="cr-age">Ages 8–16</span><a href="https://course.techyguide.in" target="_blank" class="cr-btn">Enroll →</a></div>
+        </div>
+        <div class="cr reveal delay-2">
+          <div class="cr-num">02</div>
+          <div class="cr-icon">🌐</div>
+          <div class="cr-body"><h4>IoT Course</h4><p>Connect devices to the internet. Build smart home projects and real-time data dashboards from scratch.</p></div>
+          <div class="cr-right"><span class="cr-age">Ages 12+</span><a href="https://course.techyguide.in" target="_blank" class="cr-btn">Enroll →</a></div>
+        </div>
+        <div class="cr reveal delay-3">
+          <div class="cr-num">03</div>
+          <div class="cr-icon">🧠</div>
+          <div class="cr-body"><h4>AI & Machine Learning</h4><p>Face recognition, chatbots, predictive models — real AI projects built from the ground up.</p></div>
+          <div class="cr-right"><span class="cr-age">Ages 13+</span><a href="https://course.techyguide.in" target="_blank" class="cr-btn">Enroll →</a></div>
+        </div>
+        <div class="cr reveal delay-4">
+          <div class="cr-num">04</div>
+          <div class="cr-icon">🖨️</div>
+          <div class="cr-body"><h4>3D Printing & CAD</h4><p>Design in Tinkercad and bring objects to life — learn additive manufacturing fundamentals.</p></div>
+          <div class="cr-right"><span class="cr-age">Ages 10+</span><a href="https://course.techyguide.in" target="_blank" class="cr-btn">Enroll →</a></div>
+        </div>
+        <div class="cr reveal delay-1">
+          <div class="cr-num">05</div>
+          <div class="cr-icon">💻</div>
+          <div class="cr-body"><h4>Programming (Scratch → Python)</h4><p>A structured journey from visual coding to professional Python — for every age and skill level.</p></div>
+          <div class="cr-right"><span class="cr-age">Ages 7+</span><a href="https://course.techyguide.in" target="_blank" class="cr-btn">Enroll →</a></div>
+        </div>
+      </div>
+      <div class="courses-cta reveal">
+        <a href="https://course.techyguide.in" target="_blank" class="btn btn-primary btn-lg">Browse All Courses on Our Learning Portal →</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ░░ WHY US ░░ -->
+  <section class="section why-section" id="why">
+    <div class="container">
+      <div class="why-layout">
+        <div class="why-left">
+          <div class="section-label reveal">Why TechyGuide?</div>
+          <h2 class="section-title reveal delay-1">6 Reasons Schools<br/><span class="accent-text">Choose Us First</span></h2>
+          <p class="why-p reveal delay-2">From government labs to private schools, we're the trusted STEM partner for institutions that take innovation seriously.</p>
+          <a href="#lead-form" class="btn btn-primary reveal delay-3">Talk to a STEM Expert →</a>
+        </div>
+        <div class="why-grid reveal delay-2">
+          <div class="wcard">
+            <div class="wc-i">🏅</div>
+            <h4>GeM Registered</h4>
+            <p>Government e-Marketplace verified with 5-star rating — easiest procurement for any school.</p>
+          </div>
+          <div class="wcard">
+            <div class="wc-i">📜</div>
+            <h4>Certified Curriculum</h4>
+            <p>Aligned with NEP 2020 and AIM-NITI Aayog guidelines for fully compliant STEM education.</p>
+          </div>
+          <div class="wcard">
+            <div class="wc-i">🎓</div>
+            <h4>Expert Mentors</h4>
+            <p>Trained educators with combined industry and classroom experience at every level.</p>
+          </div>
+          <div class="wcard">
+            <div class="wc-i">🔧</div>
+            <h4>End-to-End Setup</h4>
+            <p>Delivery, installation, training, curriculum, and ongoing support — all from one partner.</p>
+          </div>
+          <div class="wcard">
+            <div class="wc-i">💰</div>
+            <h4>Affordable Pricing</h4>
+            <p>Best value STEM solutions designed for schools of all sizes and budget levels.</p>
+          </div>
+          <div class="wcard wcard-hi">
+            <div class="wc-i">🌟</div>
+            <h4>15+ States Covered</h4>
+            <p>Proven pan-India track record — trusted in urban, semi-urban, and rural schools alike.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ░░ TESTIMONIALS ░░ -->
+  <section class="section testimonials-section" id="testimonials">
+    <div class="container">
+      <div class="testi-header">
+        <div>
+          <div class="section-label reveal">Social Proof</div>
+          <h2 class="section-title reveal delay-1">What Educators Say<br/><span class="accent-text">About TechyGuide</span></h2>
+        </div>
+      </div>
+      <div class="testi-wrap">
+        <div class="testi-track" id="testimonialTrack">
+          <div class="tc">
+            <div class="tc-stars">★★★★★</div>
+            <p>"TechyGuide completely transformed our school's STEM setup. The ATL lab installation was seamless and the kids are absolutely loving the robotics kits. Best investment our school has made!"</p>
+            <div class="tc-author"><div class="tc-av" style="background:#2B1FE8">SP</div><div><strong>Sunita Patel</strong><span>Science Teacher, Delhi Public School</span></div></div>
+          </div>
+          <div class="tc">
+            <div class="tc-stars">★★★★★</div>
+            <p>"After the first workshop, our students were building actual robots. TechyGuide's curriculum is practical, fun, and incredibly well-structured. The support team is always available."</p>
+            <div class="tc-author"><div class="tc-av" style="background:#FF8C00">RK</div><div><strong>Rajesh Kumar</strong><span>Principal, Kendriya Vidyalaya, Pune</span></div></div>
+          </div>
+          <div class="tc">
+            <div class="tc-stars">★★★★★</div>
+            <p>"The GeM procurement was smooth and TechyGuide's team supported us every step. Our ATL lab is now the most popular place in school. Highly recommended to every principal!"</p>
+            <div class="tc-author"><div class="tc-av" style="background:#00A8A8">AM</div><div><strong>Ananya Mishra</strong><span>STEM Coordinator, Navodaya Vidyalaya</span></div></div>
+          </div>
+          <div class="tc">
+            <div class="tc-stars">★★★★★</div>
+            <p>"My daughter joined the online AI course and within 3 months built her own face recognition project. The quality of teaching is phenomenal for the price point."</p>
+            <div class="tc-author"><div class="tc-av" style="background:#7C3AED">VT</div><div><strong>Vikram Tiwari</strong><span>Parent, Bengaluru</span></div></div>
+          </div>
+          <div class="tc">
+            <div class="tc-stars">★★★★★</div>
+            <p>"The Tinkerfest had students engaged for 8 straight hours building and competing. Energy was incredible. Booking another one for next semester without hesitation."</p>
+            <div class="tc-author"><div class="tc-av" style="background:#D97706">DG</div><div><strong>Dr. Deepa Gupta</strong><span>Headmistress, Ryan International School</span></div></div>
+          </div>
+          <div class="tc">
+            <div class="tc-stars">★★★★★</div>
+            <p>"IoT kits from TechyGuide are genuinely impressive. Kids built a smart garden monitor in 2 days. The documentation, support, and overall experience are excellent."</p>
+            <div class="tc-author"><div class="tc-av" style="background:#00A8A8">NS</div><div><strong>Neeraj Sharma</strong><span>CS Teacher, CBSE School, Mumbai</span></div></div>
+          </div>
+          <div class="tc">
+            <div class="tc-stars">★★★★★</div>
+            <p>"The robotics course is incredibly engaging! Students went from zero coding experience to building complex autonomous systems. Worth every penny."</p>
+            <div class="tc-author"><div class="tc-av" style="background:#FF8C00">MP</div><div><strong>Meera Penchala</strong><span>Teacher, Heritage School, Hyderabad</span></div></div>
+          </div>
+          <div class="tc">
+            <div class="tc-stars">★★★★★</div>
+            <p>"TechyGuide's 3D printing kits opened up a whole new dimension in our design classes. Students are now working on real-world projects with tangible outcomes."</p>
+            <div class="tc-author"><div class="tc-av" style="background:#2B1FE8">AK</div><div><strong>Arun Khare</strong><span>Tech Instructor, IB School, Bangalore</span></div></div>
+          </div>
+          <div class="tc">
+            <div class="tc-stars">★★★★★</div>
+            <p>"Outstanding support from day one. The team helped us set up the lab during holidays without any fuss. Our enrollment in STEM has doubled since launch!"</p>
+            <div class="tc-author"><div class="tc-av" style="background:#7C3AED">PR</div><div><strong>Priya Ramachandran</strong><span>Principal, Sri Venkateswara School, Chennai</span></div></div>
+          </div>
+          <div class="tc">
+            <div class="tc-stars">★★★★★</div>
+            <p>"The online courses are flexible and comprehensive. My son completed 2 courses and now has a portfolio of real projects. Highly impressed!"</p>
+            <div class="tc-author"><div class="tc-av" style="background:#00A8A8">JM</div><div><strong>Jitesh Malhotra</strong><span>Parent, Delhi NCR</span></div></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ░░ LEAD FORM ░░ -->
+  <section class="section lead-section" id="lead-form">
+    <div class="container">
+      <div class="lead-layout">
+        <div class="lead-left reveal">
+          <div class="section-label">Free Consultation</div>
+          <h2 class="lead-title">Book Your <em>Free</em><br/>Demo Today</h2>
+          <p class="lead-sub">Our STEM expert will reach out within 2 hours. No commitment, no pressure — just real answers for your school.</p>
+          <div class="lead-perks">
+            <div class="lp"><div class="lp-ck">✓</div><span>Free consultation with a STEM specialist</span></div>
+            <div class="lp"><div class="lp-ck">✓</div><span>Customized proposal for your institution</span></div>
+            <div class="lp"><div class="lp-ck">✓</div><span>Sample kit demo at no charge</span></div>
+            <div class="lp"><div class="lp-ck">✓</div><span>GeM / Government procurement support</span></div>
+            <div class="lp"><div class="lp-ck">✓</div><span>No upfront payment required</span></div>
+          </div>
+          <div class="lead-chips">
+            <a href="tel:+919114036376" class="chip">📞 +91 91140 36376</a>
+            <a href="mailto:reachus@techyguide.in" class="chip">✉️ reachus@techyguide.in</a>
+          </div>
+        </div>
+        <div class="lead-right reveal delay-2">
+          <form class="lead-form-card" id="mainLeadForm" novalidate>
+            <div class="lfc-top">
+              <h3>Get Free Consultation</h3>
+              <p>Response within 2 hours ⚡</p>
+            </div>
+            <div class="form-row">
+              <div class="fg">
+                <label for="fname">Full Name *</label>
+                <input type="text" id="fname" name="fname" placeholder="Your full name" required/>
+                <span class="ferr" id="fnameError"></span>
+              </div>
+              <div class="fg">
+                <label for="phone">Phone *</label>
+                <input type="tel" id="phone" name="phone" placeholder="+91 XXXXX XXXXX" required/>
+                <span class="ferr" id="phoneError"></span>
+              </div>
+            </div>
+            <div class="fg">
+              <label for="email">Email Address *</label>
+              <input type="email" id="email" name="email" placeholder="you@school.edu.in" required/>
+              <span class="ferr" id="emailError"></span>
+            </div>
+            <div class="form-row">
+              <div class="fg">
+                <label for="institution">Institution Name *</label>
+                <input type="text" id="institution" name="institution" placeholder="School / Organization" required/>
+                <span class="ferr" id="institutionError"></span>
+              </div>
+              <div class="fg">
+                <label for="city">City *</label>
+                <input type="text" id="city" name="city" placeholder="Your city" required/>
+                <span class="ferr" id="cityError"></span>
+              </div>
+            </div>
+            <div class="fg">
+              <label for="interest">I'm Interested In *</label>
+              <select id="interest" name="interest" required>
+                <option value="">— Select your interest —</option>
+                <option>STEM Innovation Lab Setup</option>
+                <option>ATL Lab (Atal Tinkering Lab)</option>
+                <option>AI & Robotics Lab</option>
+                <option>School Workshop / Tinkerfest</option>
+                <option>DIY STEM Kits (Bulk Order)</option>
+                <option>Online / Virtual Courses</option>
+                <option>Other / Not Sure Yet</option>
+              </select>
+              <span class="ferr" id="interestError"></span>
+            </div>
+            <div class="fg">
+              <label for="message">Message (Optional)</label>
+              <textarea id="message" name="message" rows="3" placeholder="Tell us about your school..."></textarea>
+            </div>
+            <button type="submit" class="btn btn-submit" id="submitBtn">
+              <span id="submitText">🚀 Get My Free Demo →</span>
+              <span id="submitLoader" style="display:none;">Sending...</span>
+            </button>
+            <p class="form-note">🔒 Private & secure. No spam, ever.</p>
+            <div class="form-success" id="formSuccess" style="display:none;">
+              <div class="fs-icon">🎉</div>
+              <h4>Request Received!</h4>
+              <p>Our STEM expert will call you within <strong>2 hours</strong>.</p>
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ░░ FAQ ░░ -->
+  <section class="section faq-section" id="faq">
+    <div class="container">
+      <div class="faq-layout">
+        <div class="faq-left">
+          <div class="section-label reveal">Common Questions</div>
+          <h2 class="section-title reveal delay-1">Frequently Asked<br/><span class="accent-text">Questions</span></h2>
+          <p class="reveal delay-2">Still have questions? Reach our team directly.</p>
+          <a href="tel:+919114036376" class="btn btn-primary reveal delay-3">📞 Call Us Now</a>
+        </div>
+        <div class="faq-right">
+          <div class="faq-item reveal delay-1">
+            <button class="faq-q">What grades are programs designed for? <span class="fi">+</span></button>
+            <div class="faq-a"><p>Programs are designed for students aged 7–18 (Grades 2–12) with beginner, intermediate, and advanced tracks for every level.</p></div>
+          </div>
+          <div class="faq-item reveal delay-2">
+            <button class="faq-q">Is TechyGuide a GeM registered vendor? <span class="fi">+</span></button>
+            <div class="faq-a"><p>Yes! TechyGuide is registered on the Government e-Marketplace (GeM) with a top 5-star rating and has delivered to 50+ ATL labs.</p></div>
+          </div>
+          <div class="faq-item reveal delay-3">
+            <button class="faq-q">How long does a STEM/ATL Lab setup take? <span class="fi">+</span></button>
+            <div class="faq-a"><p>A standard lab setup takes 2–4 weeks from order confirmation, including delivery, installation, and initial teacher training.</p></div>
+          </div>
+          <div class="faq-item reveal delay-4">
+            <button class="faq-q">Do you provide teacher training? <span class="fi">+</span></button>
+            <div class="faq-a"><p>Every school package includes comprehensive teacher training and certification programs so educators are confident from day one.</p></div>
+          </div>
+          <div class="faq-item reveal delay-1">
+            <button class="faq-q">Can we order DIY kits in bulk? <span class="fi">+</span></button>
+            <div class="faq-a"><p>Yes! We offer special bulk pricing for schools. Contact us for a customized quote based on student count and requirements.</p></div>
+          </div>
+          <div class="faq-item reveal delay-2">
+            <button class="faq-q">Are courses self-paced or live? <span class="fi">+</span></button>
+            <div class="faq-a"><p>Both! Self-paced video courses run 24/7. We also have live instructor-led cohorts. Visit course.techyguide.in for schedules.</p></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ░░ FINAL CTA ░░ -->
+  <section class="final-cta">
+    <div class="container">
+      <div class="fcta-box reveal">
+        <div class="fcta-l">
+          <h2>Ready to Build the Future<br/>in <em>Your School?</em></h2>
+          <p>Join 500+ schools already delivering world-class STEM education with TechyGuide.</p>
+        </div>
+        <div class="fcta-r">
+          <a href="#lead-form" class="btn btn-primary btn-lg">📞 Book Free Demo Now</a>
+          <a href="tel:+919114036376" class="btn btn-dark btn-lg">Call: +91 91140 36376</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ░░ FOOTER ░░ -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-top">
+        <div class="ft-brand">
+          <a href="#" class="nav-logo">
+            <img src="assets/Logo_TG_Tagline 2.png" alt="TechyGuide Logo" class="logo-img"/>
+          </a>
+          <p>Follow Innovation! Empowering students and schools with cutting-edge STEM education across India.</p>
+          <div class="ft-contact">
+            <a href="tel:+919114036376">📞 +91 91140 36376</a>
+            <a href="mailto:reachus@techyguide.in">✉️ reachus@techyguide.in</a>
+          </div>
+        </div>
+        <div class="ft-links">
+          <div class="ftl">
+            <h5>For Schools</h5>
+            <a href="https://www.techyguide.in/ai-robotics-lab/">AI & Robotics Lab</a>
+            <a href="https://www.techyguide.in/atal-tinkering-lab/">ATL Lab Setup</a>
+            <a href="https://www.techyguide.in/workshop/">Workshops</a>
+            <a href="https://www.techyguide.in/impact-program-4/">Impact Program</a>
+          </div>
+          <div class="ftl">
+            <h5>Products</h5>
+            <a href="https://www.techyguide.in/product-category/robotics-products/">Robotics Kits</a>
+            <a href="https://www.techyguide.in/product-category/iot-products/">IoT Products</a>
+            <a href="https://www.techyguide.in/product-category/3d-printed-products/">3D Print Kits</a>
+            <a href="https://www.techyguide.in/product-category/combo/">Combo Deals</a>
+          </div>
+          <div class="ftl">
+            <h5>Company</h5>
+            <a href="https://www.techyguide.in/about/">About Us</a>
+            <a href="https://www.techyguide.in/partners/">Partners</a>
+            <a href="https://www.techyguide.in/robothrone/">Robothrone</a>
+            <a href="https://www.techyguide.in/privacy-policy/">Privacy Policy</a>
+          </div>
+        </div>
+      </div>
+      <div class="footer-bot">
+        <p>© 2024–2025 TechyGuide. All rights reserved.</p>
+        <p>Built to inspire the next generation ⚡</p>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Floating CTA -->
+  <div class="float-cta" id="floatingCta">
+    <a href="#lead-form" class="btn btn-primary btn-sm">🚀 Free Demo</a>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
