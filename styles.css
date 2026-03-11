@@ -47,7 +47,7 @@ section {
 }
 
 /* ── UTILITIES ── */
-.container { max-width: 1180px; margin: 0 auto; padding: 0 28px; }
+.container { width: 100%; padding: 0 28px; }
 .section   { padding: 100px 0; }
 .accent-text {
   color: var(--coral);
@@ -167,7 +167,7 @@ section {
   transition: padding var(--t), border-color var(--t), box-shadow var(--t);
 }
 .navbar.scrolled { padding: 12px 0; border-color: var(--border); box-shadow: var(--shadow-sm); }
-.nav-inner { max-width: 1180px; margin: 0 auto; padding: 0 28px; display: flex; align-items: center; gap: 36px; }
+.nav-inner { width: 100%; display: flex; align-items: center; gap: 36px; padding: 0 28px; }
 .nav-logo { display: flex; align-items: center; gap: 10px; text-decoration: none; flex-shrink: 0; }
 .logo-mark {
   width: 36px; height: 36px;
